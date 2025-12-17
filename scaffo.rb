@@ -5,21 +5,21 @@
 class Scaffo < Formula
   desc "Scaffolding tool for Go projects"
   homepage "https://github.com/razpinator/scaffo"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/razpinator/scaffo/releases/download/v0.0.4/scaffo_Darwin_x86_64.tar.gz"
-      sha256 "875c0722111177dde23cfb141190606667255ef2f3234768b9bd325ffc6b0b17"
+      url "https://github.com/razpinator/scaffo/releases/download/v0.0.5/scaffo_Darwin_x86_64.tar.gz"
+      sha256 "578e53c0a8c4839628d873ac06abeb835b144b78e14f66be6251f49f0118a430"
 
       def install
         bin.install "scaffo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/razpinator/scaffo/releases/download/v0.0.4/scaffo_Darwin_arm64.tar.gz"
-      sha256 "6a28771bad13f40cd00c5b49b744ac434b93dca512e23bb0aa355f3516c6c15c"
+      url "https://github.com/razpinator/scaffo/releases/download/v0.0.5/scaffo_Darwin_arm64.tar.gz"
+      sha256 "993f29719dc7500ddb34085fcf7b177532573c6343f9c854391543efe3d7149d"
 
       def install
         bin.install "scaffo"
@@ -29,15 +29,15 @@ class Scaffo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razpinator/scaffo/releases/download/v0.0.4/scaffo_Linux_x86_64.tar.gz"
-      sha256 "02fe1f994659bfd3f676d0df16ca0dc3baa40bf75a51e4858b9422c5999c9ced"
+      url "https://github.com/razpinator/scaffo/releases/download/v0.0.5/scaffo_Linux_x86_64.tar.gz"
+      sha256 "53e95f85ceb9f0866d666806f9eba97a7e0565dd0486d8e30afd48e4d40da614"
       def install
         bin.install "scaffo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razpinator/scaffo/releases/download/v0.0.4/scaffo_Linux_arm64.tar.gz"
-      sha256 "24562acce7e69ebced5dc8e37ea4b0da61ec10cddcbb2cd35ddad7516eae9193"
+      url "https://github.com/razpinator/scaffo/releases/download/v0.0.5/scaffo_Linux_arm64.tar.gz"
+      sha256 "b4ae027b4b6f27a979ddf266af9ce75db5a7e2f226cd5622042dfeae0642588e"
       def install
         bin.install "scaffo"
       end
